@@ -1,0 +1,31 @@
+  .section { 
+	position: relative;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+  }
+
+  .parallax::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: 100%;
+	z-index: -1;
+  }
+
+  .static {
+	background: black;
+  }
+
+  .bg1::after {
+	background-image: url('https://imgs.search.brave.com/p26Mrqlpt-VRI2mzmbQzY5WB4YNveNTndlcExZVsdmk/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5P/eGNnQnNzaGU3aml3/Y1V5R2F0UUFnSGFF/NyZwaWQ9QXBp')
+  }
+  
+  .bg2::after {
+	background-image: url('https://imgs.search.brave.com/ZhWSzjGSAeTgbGL_8GeukNBH55Vng_W382HV9xnAXYc/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/VjJsYkNYN0dFVkRX/ZG1fa2NWRExBSGFF/SyZwaWQ9QXBp');
+  }
